@@ -95,10 +95,9 @@ button{
 /* ----------------------------------------------- DIV 1 : Crafting ---------------------------------------------- */
 
 .Crafting{
-    padding: 120px;
+    padding: 70px 120px;
     display: flex;
     gap: 15px;
-    height: 600px;
 }
 
 .Crafting .woman img{
@@ -106,7 +105,7 @@ button{
     border-radius: 15px;
     max-width: 100%;
     display: block;
-    top: -50px;
+    top: 100px;
 }
 
 .woman{
@@ -234,35 +233,35 @@ button{
 /*Backgrounds*/
 
 .Design_Activity{
-    background-image: url(images/Rectangle\ 34625252.svg);
+    background-image: url("images/Cover_img_mask.jpg");
 }
 
 .Dev_Activity{
-    background-image: url(images/Rectangle\ 34625257.svg);
+    background-image: url("images/Cover_img_mask_(1).jpg");
 }
 
 .Ux_Activity{
-    background-image: url(images/Rectangle\ 34625258.svg);
+    background-image: url("images/Cover_img_mask_(2).jpg");
 }
 
 .Digit_Activity{
-    background-image: url(images/Rectangle\ 34625259.svg);
+    background-image: url("images/Cover_img_mask_(3).jpg");
 }
 
 .Writting_Activity{
-    background-image: url(images/Rectangle\ 34625260.svg);
+    background-image: url("images/Cover_img_mask_(4).jpg");
 }
 
 .Email_Activity{
-    background-image: url(images/Rectangle\ 34625261.svg);
+    background-image: url("images/Cover_img_mask_(5).jpg");
 }
 
 .Motion_Activity{
-    background-image: url(images/Rectangle\ 34625262\ \(1\).svg);
+    background-image: url("images/Cover_img_mask_(6).jpg");
 }
 
 .Print_Activity{
-    background-image: url(images/Rectangle\ 34625263.svg);
+    background-image: url("images/Cover_img_mask_(7).jpg");
 }
 /* ----------------------------------------------- DIV 4 : Happy Stories---------------------------------------------- */
 
@@ -422,7 +421,8 @@ input[type="tel"] {
 }
 
 .Stay_Updated_Container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     width: 100%;
 }
@@ -430,6 +430,11 @@ input[type="tel"] {
 .Stay_Updated_Card{
     background-color: var(--light-blue);
     border-radius: 15px;
+}
+
+.Stay_Updated_Card img{
+    max-width: 100%;
+    display: block;
 }
 
 .Stay_Updated_Card_Text p{
@@ -533,6 +538,10 @@ footer{
         padding: 100px var(--padding_L_R_Tab);
     }
 
+    .Crafting .woman img{
+        top: -30px;
+    }
+
     .Brand_Identity p {
         font-size: 18px;
     }
@@ -580,6 +589,10 @@ footer{
     form{
         align-self: center;
         top: 10px;
+    }
+
+    .Stay_Updated_Container{
+        grid-template-columns: 1fr 1fr;
     }
 
     .Stay_Updated_Card_Photo img{
@@ -718,6 +731,7 @@ footer{
     .Stay_Updated_Container{
         justify-items: center;
         display: grid;
+        grid-template-columns: 1fr;
     }
 
     .Stay_Updated_Container img{
