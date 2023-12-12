@@ -1,78 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap");
 
-:root{
-    --global-font-family: 'Nunito Sans', sans-serif;
+:root {
+  --global-font-family: "Nunito Sans", sans-serif;
 
-    --Heading: #1A2630;
-    
-    --heavy-blue: #B4D5F6;
-    --light-blue: #E9F4FF;
-    --very-light-blue: #F4F6FE;
-    --Blue-default: #4361EE;
-    --very-dark-purple: #03071B;
+  --Heading: #1a2630;
 
-    --grid-gap: 30px;
+  --heavy-blue: #b4d5f6;
+  --light-blue: #e9f4ff;
+  --very-light-blue: #f4f6fe;
+  --Blue-default: #4361ee;
+  --very-dark-purple: #03071b;
 
-    --padding_L_R_Desk: 135px;
-    --padding_L_R_Tab: 60px;
-    --padding_L_R_Mob: 20px;
+  --grid-gap: 30px;
 
-    --font_size_h1_Desk: 54px;
-    --font_size_h1_Tab: 32px;
-    --font_size_h1_Mob: 24px;
+  --padding_L_R_Desk: 135px;
+  --padding_L_R_Tab: 60px;
+  --padding_L_R_Mob: 20px;
 
+  --font_size_h1_Desk: 54px;
+  --font_size_h1_Tab: 32px;
+  --font_size_h1_Mob: 24px;
 }
 
-* { /* CSS Reset */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ------------------------- body/Balises génériques -------------------------- */
 
-html, body 
-{ 
- width: 100vw;
- overflow-x: hidden;
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-body{
-    font-family: 'Nunito Sans', sans-serif;
+body {
+  font-family: "Nunito Sans", sans-serif;
 }
 
-button{
-    font-size: 18px;
-    padding: 16px 34px;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--Blue-default);
-    color: white;
-    font-family: var(--global-font-family);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
+button {
+  font-size: 18px;
+  padding: 16px 34px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--Blue-default);
+  color: white;
+  font-family: var(--global-font-family);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
 }
 
-.underline{
-    background: url('images/Text\ underline.svg') 0 bottom no-repeat;
-    background-size: contain;
+.underline {
+  background: url("images/Text\ underline.svg") 0 bottom no-repeat;
+  background-size: contain;
 }
 
 .Crafting,
 .Services,
 .Contact_Container {
-    background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 
 .Brand_Identity,
 .Services,
 .Happy,
 .Stay_Updated {
-    padding: 150px var(--padding_L_R_Desk);
-    text-align: center;
+  padding: 150px var(--padding_L_R_Desk);
+  text-align: center;
 }
 
 .title h1,
@@ -81,687 +81,685 @@ button{
 .Happy h1,
 .Contact_Us h1,
 .Stay_Updated h1 {
-    font-size: var(--font_size_h1_Desk);
+  font-size: var(--font_size_h1_Desk);
 }
 
 /* ----------------------------------------------- HEADER ---------------------------------------------- */
 
-.div_header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px var(--padding_L_R_Desk);
+.div_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px var(--padding_L_R_Desk);
 }
 
 /* ----------------------------------------------- DIV 1 : Crafting ---------------------------------------------- */
 
-.Crafting{
-    padding: 70px 120px;
-    display: flex;
-    gap: 15px;
+.Crafting {
+  padding: 70px 120px;
+  display: flex;
+  gap: 15px;
 }
 
-.Crafting .woman img{
-    position: relative;
-    border-radius: 15px;
-    max-width: 100%;
-    display: block;
-    top: 100px;
+.Crafting .woman img {
+  position: relative;
+  border-radius: 15px;
+  max-width: 100%;
+  display: block;
+  top: 100px;
 }
 
-.woman{
-    flex-basis: 50%;
-    display: flex;
-    align-items: start;
+.woman {
+  flex-basis: 50%;
+  display: flex;
+  align-items: start;
 }
 
-.title{
-    flex-basis: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
+.title {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* ----------------------------------------------- DIV 2 : Brand Identity---------------------------------------------- */
 
-.Brand_Identity{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Brand_Identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Brand_Identity h1{
-    margin-bottom: 35px;
+.Brand_Identity h1 {
+  margin-bottom: 35px;
 }
 
-.Brand_Identity p{
-    font-size: 20px;
-    line-height: 170%;
-    text-align: center;
+.Brand_Identity p {
+  font-size: 20px;
+  line-height: 170%;
+  text-align: center;
 }
 
-.bi_meeting{
-    margin-top: 47px;
-    display: flex;
-    gap: 56px;
+.bi_meeting {
+  margin-top: 47px;
+  display: flex;
+  gap: 56px;
 }
 
-.text_meeting{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap : 20px;
+.text_meeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
-.text_meeting p{
-    font-size: 20px;
-    line-height: 170%;
-    text-align: left;
+.text_meeting p {
+  font-size: 20px;
+  line-height: 170%;
+  text-align: left;
 }
 
-.reunion img{
-    border-radius: 30% 70% 49% 51% / 55% 37% 63% 45%;
-    box-shadow: 8px 8px var(--light-blue);
-    width: 335px;
-    height: 311px;
+.reunion img {
+  border-radius: 30% 70% 49% 51% / 55% 37% 63% 45%;
+  box-shadow: 8px 8px var(--light-blue);
+  width: 335px;
+  height: 311px;
 }
 
 /* ----------------------------------------------- DIV 3 : Services---------------------------------------------- */
 
-.Services h1{
-    margin-bottom: 80px;
+.Services h1 {
+  margin-bottom: 80px;
 }
 
-.Grid_Services{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+.Grid_Services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
-.Grid_Services .Card{
-    border-radius: 10px;
+.Grid_Services .Card {
+  border-radius: 10px;
 }
 
-.Card{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 355px;
-    width: 100%;
+.Card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 355px;
+  width: 100%;
 }
 
-.Cards_Infos{
-    padding: 30px;
-    transform: translateY(211px);
+.Cards_Infos {
+  padding: 30px;
+  transform: translateY(211px);
 }
 
-.Icon_Activity{
-    display: flex;
-    align-items: center;
-    gap: 14px; 
-    color: white;
-    font-weight: 700;
-    margin-bottom: 16px;
+.Icon_Activity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
-.Icon_Activity{
-    font-size: 20px;
+.Icon_Activity {
+  font-size: 20px;
 }
 
-.position{
-    position: absolute;
-    transform: translateX(25%);
+.position {
+  position: absolute;
+  transform: translateX(25%);
 }
 
-.Button_Activity button{
-    padding: 0px;
-    background-color: transparent;
+.Button_Activity button {
+  padding: 0px;
+  background-color: transparent;
 }
 
 .Button_Activity button p {
-    font-weight: 400;
+  font-weight: 400;
 }
 
-.Button_Services{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
+.Button_Services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 /*Backgrounds*/
 
-.Design_Activity{
-    background-image: url("images/Cover_img_mask.jpg");
+.Design_Activity {
+  background-image: url("images/Cover_img_mask.jpg");
 }
 
-.Dev_Activity{
-    background-image: url("images/Cover_img_mask_(1).jpg");
+.Dev_Activity {
+  background-image: url("images/Cover_img_mask_(1).jpg");
 }
 
-.Ux_Activity{
-    background-image: url("images/Cover_img_mask_(2).jpg");
+.Ux_Activity {
+  background-image: url("images/Cover_img_mask_(2).jpg");
 }
 
-.Digit_Activity{
-    background-image: url("images/Cover_img_mask_(3).jpg");
+.Digit_Activity {
+  background-image: url("images/Cover_img_mask_(3).jpg");
 }
 
-.Writting_Activity{
-    background-image: url("images/Cover_img_mask_(4).jpg");
+.Writting_Activity {
+  background-image: url("images/Cover_img_mask_(4).jpg");
 }
 
-.Email_Activity{
-    background-image: url("images/Cover_img_mask_(5).jpg");
+.Email_Activity {
+  background-image: url("images/Cover_img_mask_(5).jpg");
 }
 
-.Motion_Activity{
-    background-image: url("images/Cover_img_mask_(6).jpg");
+.Motion_Activity {
+  background-image: url("images/Cover_img_mask_(6).jpg");
 }
 
-.Print_Activity{
-    background-image: url("images/Cover_img_mask_(7).jpg");
+.Print_Activity {
+  background-image: url("images/Cover_img_mask_(7).jpg");
 }
 /* ----------------------------------------------- DIV 4 : Happy Stories---------------------------------------------- */
 
-.Happy h1{
-    margin-bottom: 82px;
+.Happy h1 {
+  margin-bottom: 82px;
 }
 
-.div_carrousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 130px;
+.div_carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 130px;
 }
 
 .carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .carousel-container {
-    position: relative;
-    width: 80%;
-    text-align: center;
+  position: relative;
+  width: 80%;
+  text-align: center;
 }
 
 .carrousel_button button {
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--very-light-blue)
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--very-light-blue);
 }
 
 .slide {
-    flex: 0 0 100%;
-    display: flex;
-    align-items: center;
-    background-color: var(--very-light-blue);
-    border-radius: 8px;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--very-light-blue);
+  border-radius: 8px;
 }
 
 .slide img {
-    max-width: 100%;
-    border-radius: 30% 70% 49% 51% / 55% 37% 63% 45%;
-    box-shadow: 8px 8px var(--heavy-blue);
-    margin: 20px 26px 20px 30px;
+  max-width: 100%;
+  border-radius: 30% 70% 49% 51% / 55% 37% 63% 45%;
+  box-shadow: 8px 8px var(--heavy-blue);
+  margin: 20px 26px 20px 30px;
 }
 
 .slide p {
-    margin: 10px 37px;
-    text-align: left;
-    line-height: 170%;
-    font-size: 20px;
+  margin: 10px 37px;
+  text-align: left;
+  line-height: 170%;
+  font-size: 20px;
 }
 
-.icon{
-    width: 15px;
-} 
+.icon {
+  width: 15px;
+}
 
 .prev {
-    position: absolute;
-    top: 50%;
-    left: -15%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  transform: translateY(-50%);
 }
 
 .next {
-    position: absolute;
-    top: 50%;
-    right: -15%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: -15%;
+  transform: translateY(-50%);
 }
 
-.Contact_Us h1{
-   margin-bottom: 0px; 
+.Contact_Us h1 {
+  margin-bottom: 0px;
 }
 
 /* ----------------------------------------------- DIV 5 : Contact ---------------------------------------------- */
 
-.Contact_Us h1{
-    text-align: center;
-    margin-bottom: 75px;
+.Contact_Us h1 {
+  text-align: center;
+  margin-bottom: 75px;
 }
 
-.Contact_Container{
-    padding: 40px var(--padding_L_R_Desk);
-    display: flex;
-    justify-content: space-between;
+.Contact_Container {
+  padding: 40px var(--padding_L_R_Desk);
+  display: flex;
+  justify-content: space-between;
 }
 
-.Contact_Container_Infos{
-    align-self: center;
+.Contact_Container_Infos {
+  align-self: center;
 }
 
-.Contact_Infos{
-    display: flex;
-    padding-bottom: 40px;
+.Contact_Infos {
+  display: flex;
+  padding-bottom: 40px;
 }
 
-.Contact_Infos_Text{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+.Contact_Infos_Text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.Contact_Infos_Text h4{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 24px;
-    font-weight: 400;
+.Contact_Infos_Text h4 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.Contact_Infos_Text p{
-    font-size: 18px;
+.Contact_Infos_Text p {
+  font-size: 18px;
 }
 
 /* Formulaire*/
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    background-color: white;
-    padding: 50px;
-    border-radius: 15px;
-    width: 570px;
-    position: relative;
-    top: 80px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+  width: 570px;
+  position: relative;
+  top: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
 }
 
 .formulaire {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0px;
-    height: 48px;
-    border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px;
+  height: 48px;
+  border-radius: 6px;
 }
 
 /* ----------------------------------------------- DIV 6 ---------------------------------------------- */
 
-.Stay_Updated h1{
-    margin-bottom: 77px;
+.Stay_Updated h1 {
+  margin-bottom: 77px;
 }
 
-.Stay_Updated_Container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    width: 100%;
+.Stay_Updated_Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 100%;
 }
 
-.Stay_Updated_Card{
-    background-color: var(--light-blue);
-    border-radius: 15px;
+.Stay_Updated_Card {
+  background-color: var(--light-blue);
+  border-radius: 15px;
 }
 
-.Stay_Updated_Card img{
-    max-width: 100%;
-    display: block;
+.Stay_Updated_Card img {
+  max-width: 100%;
+  display: block;
 }
 
-.Stay_Updated_Card_Text p{
-    font-size: 24px;
-    text-align: left;
-    margin: 24px 30px;
+.Stay_Updated_Card_Text p {
+  font-size: 24px;
+  text-align: left;
+  margin: 24px 30px;
 }
 
-.Stay_Updated_Card_Button button{
-    color: var(--Blue-default);
-    padding-left: 30px;
-    padding-bottom: 30px;
+.Stay_Updated_Card_Button button {
+  color: var(--Blue-default);
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
 
 /* ----------------------------------------------- FOOTER ---------------------------------------------- */
 
-footer{
-    background-color: var(--very-dark-purple);
-    color: white;
-    padding: 60px var(--padding_L_R_Desk);
-    /* text-align: center; */
+footer {
+  background-color: var(--very-dark-purple);
+  color: white;
+  padding: 60px var(--padding_L_R_Desk);
+  /* text-align: center; */
 }
 
-.Grid_Footer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.Grid_Footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.logo_principal{
-    margin-bottom: 36px;
+.logo_principal {
+  margin-bottom: 36px;
 }
 
-#Pos_Log_Foot{
-    margin-right: 18px;
+#Pos_Log_Foot {
+  margin-right: 18px;
 }
 
 .div_footer_contact h4,
 .div_footer_explore h4,
-.div_footer_subscription h4{
-    font-size: 20px;
-    margin-bottom: 20px;
+.div_footer_subscription h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-.footer_icon_contact{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+.footer_icon_contact {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.div_footer_explore p{
-    margin-bottom: 20px;
+.div_footer_explore p {
+  margin-bottom: 20px;
 }
 
-.subscription_text p{
-    margin-top: 14px;
-    margin-bottom: 20px;
+.subscription_text p {
+  margin-top: 14px;
+  margin-bottom: 20px;
 }
 
-.div_footer_logos{
-    order: 1;
+.div_footer_logos {
+  order: 1;
 }
 
-.div_footer_contact{
-    order: 2;
+.div_footer_contact {
+  order: 2;
 }
 
-.div_footer_explore{
-    order: 3;
+.div_footer_explore {
+  order: 3;
 }
 
-.div_footer_subscription{
-    order: 4;
+.div_footer_subscription {
+  order: 4;
 }
-
 
 /* ----------------------------------------------- RESPONSIVE TAB ---------------------------------------------- */
 
 @media screen and (max-width: 768px) {
-    .div_header{
-        padding: 30px var(--padding_L_R_Tab);
-    }
+  .div_header {
+    padding: 30px var(--padding_L_R_Tab);
+  }
 
-    .Crafting{
-        padding: 60px;
-        height: 315px;
-    }
+  .Crafting {
+    padding: 60px;
+    height: 315px;
+  }
 
-    .title h1,
-    .Brand_Identity h1,
-    .Services h1,
-    .Happy h1,
-    .Contact_Us h1,
-    .Stay_Updated h1 {
-        font-size: var(--font_size_h1_Tab)
-    }
+  .title h1,
+  .Brand_Identity h1,
+  .Services h1,
+  .Happy h1,
+  .Contact_Us h1,
+  .Stay_Updated h1 {
+    font-size: var(--font_size_h1_Tab);
+  }
 
-    .Brand_Identity,
-    .Services,
-    .Happy,
-    .Stay_Updated {
-        padding: 100px var(--padding_L_R_Tab);
-    }
+  .Brand_Identity,
+  .Services,
+  .Happy,
+  .Stay_Updated {
+    padding: 100px var(--padding_L_R_Tab);
+  }
 
-    .Crafting .woman img{
-        top: -30px;
-    }
+  .Crafting .woman img {
+    top: -30px;
+  }
 
-    .Brand_Identity p {
-        font-size: 18px;
-    }
+  .Brand_Identity p {
+    font-size: 18px;
+  }
 
-    .bi_meeting {
-        display: flex;
-        flex-direction: column;
-    }
+  .bi_meeting {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .reunion{
-        display: flex;
-        justify-content: center;
-    }
+  .reunion {
+    display: flex;
+    justify-content: center;
+  }
 
-    .Grid_Services{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .Grid_Services {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .Card:nth-child(n+5) {
-        display: none;
-    }
+  .Card:nth-child(n + 5) {
+    display: none;
+  }
 
-    .slide {
-        flex-direction: column;
-    }
+  .slide {
+    flex-direction: column;
+  }
 
-    .slide p{
-        text-align: center;
-    }
+  .slide p {
+    text-align: center;
+  }
 
-    .Contact_Container {
-        padding: 60px var(--padding_L_R_Tab) 0px;
-    }
+  .Contact_Container {
+    padding: 60px var(--padding_L_R_Tab) 0px;
+  }
 
-    .Contact_Container{
-        flex-direction: column;
-    }
+  .Contact_Container {
+    flex-direction: column;
+  }
 
-    .Contact_Container_Infos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .Contact_Container_Infos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    form{
-        align-self: center;
-        top: 10px;
-    }
+  form {
+    align-self: center;
+    top: 10px;
+  }
 
-    .Stay_Updated_Container{
-        grid-template-columns: 1fr 1fr;
-    }
+  .Stay_Updated_Container {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .Stay_Updated_Card_Photo img{
-        max-width: 100%;
-    }
+  .Stay_Updated_Card_Photo img {
+    max-width: 100%;
+  }
 
-    .Stay_Updated_Card_Text p {
-        font-size: 20px;
-    }
+  .Stay_Updated_Card_Text p {
+    font-size: 20px;
+  }
 
-    .Stay_Card:last-child{
-        display: none;
-    }
+  .Stay_Card:last-child {
+    display: none;
+  }
 
-    .Grid_Footer{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .Grid_Footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    footer{
-        padding: 60px var(--padding_L_R_Tab);
-    }
+  footer {
+    padding: 60px var(--padding_L_R_Tab);
+  }
 
-    .div_footer_subscription{
-        order: 1;
-        margin-bottom: 50px;
-    }
-
+  .div_footer_subscription {
+    order: 1;
+    margin-bottom: 50px;
+  }
 }
 
 /* ----------------------------------------------- RESPONSIVE MOB---------------------------------------------- */
 
 @media screen and (max-width: 425px) {
-    .div_header,
-    .Brand_Identity,
-    .Services,
-    .Happy,
-    .Contact_Container,
-    .Stay_Updated,
-    .div_footer {
-        padding: 40px var(--padding_L_R_Mob);
-    }
+  .div_header,
+  .Brand_Identity,
+  .Services,
+  .Happy,
+  .Contact_Container,
+  .Stay_Updated,
+  .div_footer {
+    padding: 40px var(--padding_L_R_Mob);
+  }
 
-    .Crafting{
-        display: flex;
-        flex-direction: column;
-        padding: 40px 20px 0px 20px;
-        height: 470px;
-    }
+  .Crafting {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 0px 20px;
+    height: 470px;
+  }
 
-    .Crafting .title button{
-        justify-content: center;
-    }
+  .Crafting .title button {
+    justify-content: center;
+  }
 
-    .Crafting .woman img {
-        max-width: 70%;
-        top: 10px;
-    }
+  .Crafting .woman img {
+    max-width: 70%;
+    top: 10px;
+  }
 
-    .title h1,
-    .Brand_Identity h1,
-    .Happy h1,
-    .Services h1,
-    .Contact_Us h1,
-    .Stay_Updated h1{
-        font-size: var(--font_size_h1_Mob);
-        text-align: center;
-    }
+  .title h1,
+  .Brand_Identity h1,
+  .Happy h1,
+  .Services h1,
+  .Contact_Us h1,
+  .Stay_Updated h1 {
+    font-size: var(--font_size_h1_Mob);
+    text-align: center;
+  }
 
-    .Stay_Updated h1,
-    .Brand_Identity h1{
-        margin-top: 40px;
-    }
+  .Stay_Updated h1,
+  .Brand_Identity h1 {
+    margin-top: 40px;
+  }
 
-    .title {
-        display: flex;
-        align-items: center;
-    }
+  .title {
+    display: flex;
+    align-items: center;
+  }
 
-    .woman{
-        display: flex;
-        justify-content: center;
-    }
+  .woman {
+    display: flex;
+    justify-content: center;
+  }
 
-    .Brand_Identity p {
-            text-align: center;
-    }
+  .Brand_Identity p {
+    text-align: center;
+  }
 
-    .Cards_Infos {
-        padding: 10px;
-        transform: translateY(103px);
-    }
+  .Cards_Infos {
+    padding: 10px;
+    transform: translateY(103px);
+  }
 
-    .Card {
-        height: 180px;
-    }
+  .Card {
+    height: 180px;
+  }
 
-    .Icon_Activity{
-        margin-bottom: 10px;
-    }
+  .Icon_Activity {
+    margin-bottom: 10px;
+  }
 
-    #Icon_Activity_img_1{
-        width: 25px;
-    }
+  #Icon_Activity_img_1 {
+    width: 25px;
+  }
 
-    #Icon_Activity_img_2{
-        width: 17px;
-    }
+  #Icon_Activity_img_2 {
+    width: 17px;
+  }
 
-    .Icon_Activity p,
-    .Button_Activity p{
-        font-size: 13px;
-    }
+  .Icon_Activity p,
+  .Button_Activity p {
+    font-size: 13px;
+  }
 
-    .Happy h1{
-        margin-bottom: 40px;
-    }
+  .Happy h1 {
+    margin-bottom: 40px;
+  }
 
-    .slide p{
-        font-size: 18px;
-    }
+  .slide p {
+    font-size: 18px;
+  }
 
-    .prev, .next{
-        display: none;
-    }
+  .prev,
+  .next {
+    display: none;
+  }
 
-    form {
-        width: 330px;
-        padding: 20px;
-        top: 50px;
-    }
+  form {
+    width: 330px;
+    padding: 20px;
+    top: 50px;
+  }
 
-    form label{
-        font-size: 16px;
-    }
-    
-    .Stay_Updated_Container{
-        justify-items: center;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  form label {
+    font-size: 16px;
+  }
 
-    .Stay_Updated_Container img{
-        object-fit: cover;
-        width: 100%;
-    }
+  .Stay_Updated_Container {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-    .Stay_Updated_Card_Text p{
-        font-size: 20px;
-    }
+  .Stay_Updated_Container img {
+    object-fit: cover;
+    width: 100%;
+  }
 
-    .Grid_Footer{
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .Stay_Updated_Card_Text p {
+    font-size: 20px;
+  }
 
-    .div_footer_logos{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
+  .Grid_Footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .logo_principal{
-        margin-bottom: 0px;
-    }
+  .div_footer_logos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 
-    .logo_RS{
-        margin-left: 30px;
-    }
+  .logo_principal {
+    margin-bottom: 0px;
+  }
 
-    .div_footer_contact{
-        margin-bottom: 40px;
-    }
+  .logo_RS {
+    margin-left: 30px;
+  }
+
+  .div_footer_contact {
+    margin-bottom: 40px;
+  }
 }
